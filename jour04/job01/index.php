@@ -13,9 +13,12 @@
   <?php
 
 #foreach du tableau $get qui fait un echo de $value
+#initiation de count, incrémentation de la variable et écho du nombre total
+$count = 0;
 foreach ($_GET as $key => $value){ 
-    echo $value; 
+     $count++;
+
+
 }
-
-
+echo $count;
   ?>
