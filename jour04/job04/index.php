@@ -10,31 +10,30 @@
     <input type="submit" value="envoyer">
   </form>  
 
-  <table>
-    <tr>
-        <td><b>Argument</b></td>
-        <td><b>Valeur</b></td>
-    </tr>
-    <tr>
-        <td>Nom</td>
-        <!-- Echo de la value correspondante du tableau POST-->
-        <td><?php echo $_POST["username"] ?></td>
-    </tr>
-    <tr>
-        <td>Prénom</td>
-        <td><?php echo $_POST["firstname"] ?></td>
-    </tr>
-    <tr>
-        <td>Email</td>
-        <td><?php echo $_POST["email"] ?></td>
-    </tr>
-  </table>
+
   <?php
 
 #tableau qui vient parcourir les valeurs de POST et returne la value
 
-foreach ($_POST as $key => $value){ 
-    return $value;   
+if($_POST){
+  echo "
+  <table>
+    <thead>
+        <tr>
+          <td>Argument</td>
+          <td>Valeur</td>
+        </tr>
+    </thead>
+    ";
 
+foreach ($_POST as $key => $value){ 
+    echo "
+      <tr>
+        <td>$key</td>
+        <td>$value</td>
+      </tr>
+    ";
+  }
+ 
 }
   ?>
