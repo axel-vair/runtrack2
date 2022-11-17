@@ -30,6 +30,8 @@
     </tr>
   </table>
   <?php
+  
+# ON UTILISE UNE CONDITION POUR AFFICHER LE TABLEAU DANS L'EXO 4
 
 #tableau qui vient parcourir les valeurs de Get et returne la value
 
