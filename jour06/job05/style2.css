@@ -1,0 +1,18 @@
+input[type = "submit"]{ 
+    color: orange;
+    border: 10px groove pink;
+    
+}
+
+select {
+    border-radius: 2px;
+    border: 10px groove pink;
+    background-color: #85E3FF;
+}
+
+
+* { 
+    background-color: #85E3FF;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
