@@ -29,10 +29,10 @@
 <body>
     <form action="" method="post">
         <select name="style">
-            <option value="style1">style 1</option>
             <!-- Ternaire dans une ternaire pour éviter l'erreur au démarrage du serveur sans valeur selectionnée -->
-            <option value="style2" <?php echo (isset($_POST)) ? (($_POST["style"] == "style2") ? "selected" : NULL) : NULL;?>>style 2</option> 
-            <option value="style3" <?php echo (isset($_POST)) ? (($_POST["style"] == "style3") ? "selected" : NULL) : NULL;?>>style 3</option>
+            <option value="style1" <?php echo (isset($_POST["style"])) ? (($_POST["style"] == "style1") ? "selected" : NULL) : NULL;?>>style 1</option>
+            <option value="style2" <?php echo (isset($_POST["style"])) ? (($_POST["style"] == "style2") ? "selected" : NULL) : NULL;?>>style 2</option> 
+            <option value="style3" <?php echo (isset($_POST["style"])) ? (($_POST["style"] == "style3") ? "selected" : NULL) : NULL;?>>style 3</option>
         </select>
         <input type="submit" value="Submit">
     </form>
