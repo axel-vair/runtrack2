@@ -8,6 +8,6 @@
         echo "<u><b><br>$i</b></u>";
     }else{
         echo "<br>$i";
-    }''
+    }
 }
 ?> 

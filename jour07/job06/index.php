@@ -18,6 +18,8 @@ function leetSpeak($str){
             $str[$i] = 7;
         }
     } return $str;
+
+    
 }
 
 echo leetSpeak("arefdsfooelst"); 
