@@ -1,0 +1,3 @@
+SELECT *
+FROM SALLES
+ORDER BY capacite DESC;
